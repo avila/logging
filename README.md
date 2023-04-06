@@ -10,8 +10,8 @@ logging: Safer Stata logging facility to avoid overwriting important log files a
   left with a stub of a log with not much value. This module aims to overcome
   this issue by always using a temporary log file and only when closing the
   log the final log file is replaced. If one opens a new log that would
-  overwrite the complete log, one can abort by using logging abort or log
-  close \_all.
+  overwrite the complete log, one can abort by using `logging abort` or `log
+    close \_all`.
 
 
 **Known Issues**
@@ -53,7 +53,8 @@ net install logging, from(https://raw.githubusercontent.com/avila/logging/master
       path(str)            path where the final log will be saved
 
     Options
-      subfolder            Archives the present log file in a subfolder. Per default versioned log files are saved in the same folder as the log
+      subfolder            Archives the present log file in a subfolder. Per default
+                           versioned log files are saved in the same folder as the log
       mkdir                Create a subfolder directory. To be used with subfolder
       keeptemplog          do not delete temporary log file
       debug                print debug messages
