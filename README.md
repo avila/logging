@@ -1,5 +1,5 @@
 
-- [logging: Safer Stata logging facility to avoid overwriting important log files and to archive older ones](#logging-safer-stata-logging-facility-to-avoid-overwriting-important-log-files-and-to-archive-older-ones
+- [logging: Safer Stata logging facility to avoid overwriting important log files and to archive older ones](#logging-safer-stata-logging-facility-to-avoid-overwriting-important-log-files-and-to-archive-older-ones)
 - [Motivation](#motivation)
 - [Installation](#installation)
 - [Syntax](#syntax)
