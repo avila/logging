@@ -1,0 +1,9 @@
+********************************************** logging.pkg
+v 3
+d logging
+d Program to provide safer logging facilities
+d Distribution-Date: 20230406
+d
+d Version 0.1
+f stata/logging.ado
+f stata/logging.sthlp
