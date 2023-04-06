@@ -5,7 +5,23 @@ logging: Safer Stata logging facility to avoid overwriting important log files a
 
 ## Motivation 
 
-_(to be done)_
+- When logging a Stata session it happens that one mistakenly overwrites a
+  complete log file with a new stub and the complete log is gone and you are
+  left with a stub of a log with not much value. This module aims to overcome
+  this issue by always using a temporary log file and only when closing the
+  log the final log file is replaced. If one opens a new log that would
+  overwrite the complete log, one can abort by using logging abort or log
+  close \_all.
+
+
+**Known Issues**
+
+- only one log can be tracked at a time!
+- log information (such as name) is kept with globals, so it may clash with
+  other globals defined by the user.
+- Still in testing/beta and written for personal usage, but I'm happy to take 
+pull requests or implement other features.
+
 
 ## Installation 
 
